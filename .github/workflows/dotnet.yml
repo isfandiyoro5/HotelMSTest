@@ -24,4 +24,4 @@ jobs:
       run: dotnet restore
       working-directory: ./TestHotelMSTest
     - name: Build
-      run: dotnet test ./HotelMSTest/HotelMSTest.sln
+      run: dotnet build ./HotelMSTest/HotelMSTest.sln
