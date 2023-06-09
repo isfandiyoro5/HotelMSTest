@@ -22,7 +22,6 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
+      working-directory: ./TestHotelMSTest
     - name: Build
-      run: dotnet build ./HotelMSTest
-    - name: Test
       run: dotnet test ./HotelMSTest/HotelMSTest.sln
