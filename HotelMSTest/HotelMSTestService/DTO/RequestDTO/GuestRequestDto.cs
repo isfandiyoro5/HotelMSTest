@@ -1,13 +1,9 @@
-﻿namespace HotelMSTestDataAccess.Models
+﻿using HotelMSTestDataAccess.Models;
+
+namespace HotelMSTestService.DTO.RequestDTO
 {
-    public class Guest
+    public class GuestRequestDto
     {
-        public int GuestId { get; set; }
-
-        public int BookingId { get; set; }
-
-        public GuestPriority GuestPriority { get; set; }
-
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -28,17 +24,6 @@
 
         public string Country { get; set; }
 
-
-        public List<Booking> Bookings { get; set; }
-
-        public Bill Bill { get; set; }
-    }
-
-    public enum GuestPriority
-    {
-        Standart,
-        CIP,
-        VIP,
-        DIP
+        public GuestPriority GuestPriority { get; set; }
     }
 }

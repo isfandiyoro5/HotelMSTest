@@ -1,6 +1,8 @@
-﻿namespace HotelMSTestDataAccess.Models
+﻿using HotelMSTestDataAccess.Models;
+
+namespace HotelMSTestService.DTO.ResponseDTO
 {
-    public class Room
+    public class RoomResponseDto
     {
         public int RoomId { get; set; }
 
@@ -12,29 +14,10 @@
 
         public Occupancy Occupancy { get; set; }
 
-        public RoomTypes RoomTypes { get; set; }
-
         public double RoomPrice { get; set; }
 
         public string RoomImage { get; set; }
 
         public string RoomsDescription { get; set; }
-
-
-        public Hotel Hotel { get; set; }
-    }
-
-    public enum Occupancy
-    {
-        Empty,
-        Busy
-    }
-
-    public enum RoomTypes
-    {
-        Standard,
-        Deluxe,
-        JuniorSuite,
-        SeniorSuite
     }
 }
