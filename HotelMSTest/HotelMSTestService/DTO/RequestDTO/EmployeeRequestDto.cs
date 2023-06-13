@@ -1,13 +1,9 @@
-﻿namespace HotelMSTestDataAccess.Models
+﻿using HotelMSTestDataAccess.Models;
+
+namespace HotelMSTestService.DTO.RequestDTO
 {
-    public class Employee
+    public class EmployeeRequestDto
     {
-        public int EmployeeId { get; set; }
-
-        public int HotelId { get; set; }
-
-        public int RoleId { get; set; }
-
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
@@ -23,17 +19,5 @@
         public string Password { get; set; }
 
         public double Salary { get; set; }
-
-
-        public Hotel Hotel { get; set; }
-
-        public Role Role { get; set; }
-    }
-
-    public enum Gender
-    {
-        Male,
-        Female,
-        Other
     }
 }

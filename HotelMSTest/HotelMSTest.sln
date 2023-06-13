@@ -8,14 +8,17 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelMSTestDataAccess", "HotelMSTestDataAccess\HotelMSTestDataAccess.csproj", "{B1287895-953C-471A-B5D3-2F61A800EFFF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelMSTestService", "HotelMSTestService\HotelMSTestService.csproj", "{7DA505B6-4CA3-4819-A9EA-6E7B332EC0BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1287895-953C-471A-B5D3-2F61A800EFFF} = {B1287895-953C-471A-B5D3-2F61A800EFFF}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HotelMSTest", "HotelMSTest", "{66748E11-2F99-47DE-A8CA-011F3558736A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHotelMS.API", "TestHotelMS.API\TestHotelMS.API.csproj", "{CD32F4E6-651E-46FD-9907-07C1816900FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHotelMS.API", "TestHotelMS.API\TestHotelMS.API.csproj", "{CD32F4E6-651E-46FD-9907-07C1816900FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHotelMS.DataAccess", "TestHotelMS.DataAccess\TestHotelMS.DataAccess.csproj", "{6F8F6411-6AD7-4BAA-8CA5-075305A3EB3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHotelMS.DataAccess", "TestHotelMS.DataAccess\TestHotelMS.DataAccess.csproj", "{6F8F6411-6AD7-4BAA-8CA5-075305A3EB3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHotelMS.Service", "TestHotelMS.Service\TestHotelMS.Service.csproj", "{93F64857-3EB2-4B2F-B5BB-0CFE679B7247}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestHotelMS.Service", "TestHotelMS.Service\TestHotelMS.Service.csproj", "{93F64857-3EB2-4B2F-B5BB-0CFE679B7247}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
